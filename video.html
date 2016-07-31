@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link href="http://vjs.zencdn.net/5.10/video-js.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+ data-setup="{}">
+<source
+     src="/www/out.m3u8"
+     type="application/x-mpegURL">
+    </video>
+
+  <script src="http://vjs.zencdn.net/5.10/video.js"></script>
+  <script src="http://cdn.bootcss.com/videojs-contrib-hls/3.0.0/videojs-contrib-hls.js"></script>
+<script>
+var player = videojs('my-video');
+player.play();
+</script>
+</body>
+</html>
